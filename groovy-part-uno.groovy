@@ -52,7 +52,7 @@ c()
 
 //weird closure syntax
 void runCls (int n, Closure closure) {
-        println closure n
+        println closure(n)
 }
 
 runCls 2, {it-> Math.pow(2,it) }
@@ -76,6 +76,7 @@ void withMaps(Map conf) {
     println conf
 }
 
+//these are exactly the same calls
 withMaps([a:1, b:2])
 withMaps(a:1, b:2)
 
